@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: AA-PROJECT
+  namespace: AA-PROJECT
+  labels:
+    app: AA-PROJECT
+spec:
+  selector:
+    matchLabels:
+      app: AA-PROJECT
+  template:
+    metadata:
+      labels:
+        app: AA-PROJECT
+    spec:
+      containers:
+        - name: AA-PROJECT
+          image: keithstric/AA-PROJECT:latest
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: AA-PROJECT-service
+  namespace: AA-PROJECT
+spec:
+  selector:
+    app: AA-PROJECT
+  type: ClusterIP
+  ports:
+    - name: AA-PROJECT-port
+      protocol: TCP
+      port: 8080
+      targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: AA-PROJECT-ingress
+  namespace: AA-PROJECT
+spec:
+  rules:
+    - host: "devops.home"
+      http:
+        paths:
+          - path: /AA-PROJECT
+            pathType: Prefix
+            backend:
+              service:
+                name: AA-PROJECT-service
+                port:
+                  number: 8080

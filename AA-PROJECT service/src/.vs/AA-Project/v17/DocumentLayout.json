@@ -1,0 +1,310 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\identity\\services\\concrete\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|solutionrelative:libraries\\identity\\services\\concrete\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\identity\\services\\concrete\\tokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|solutionrelative:libraries\\identity\\services\\concrete\\tokenblacklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\identity\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|solutionrelative:libraries\\identity\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A5E261-4D9F-410E-A2C6-112CD9D874C9}|Libraries\\Caching\\Caching.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\caching\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A5E261-4D9F-410E-A2C6-112CD9D874C9}|Libraries\\Caching\\Caching.csproj|solutionrelative:libraries\\caching\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\attributes\\cachedattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\attributes\\cachedattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\extensions\\appextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\extensions\\appextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\helpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\helpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\middlewares\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\middlewares\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\services\\authenticateduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\services\\authenticateduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\identity\\contexts\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|solutionrelative:libraries\\identity\\contexts\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\presentations\\webapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38112081-5469-48CC-8B1C-195F59FFC24C}|Presentations\\WebApi\\WebApi.csproj|solutionrelative:presentations\\webapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\identity\\services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|solutionrelative:libraries\\identity\\services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\identity\\identitycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A449C0-D3C1-4A9C-AA0D-7FA767B245F3}|Libraries\\Identity\\Identity.csproj|solutionrelative:libraries\\identity\\identitycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DCD3AE-695F-4362-92DC-E7A43A3ECB5E}|Libraries\\Core\\Core.csproj|c:\\users\\ant\u00F3nio\\documents\\programming\\aa-project service\\src\\libraries\\core\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DCD3AE-695F-4362-92DC-E7A43A3ECB5E}|Libraries\\Core\\Core.csproj|solutionrelative:libraries\\core\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwFwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T15:10:59.972Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Program.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:50:25.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Startup.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Startup.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Startup.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Startup.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAqwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:52:16.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Middlewares\\ErrorHandlerMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:52:06.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Extensions\\AppExtensions.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Extensions\\AppExtensions.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Extensions\\AppExtensions.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Extensions\\AppExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:52:45.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CachedAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Attributes\\CachedAttribute.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Attributes\\CachedAttribute.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Attributes\\CachedAttribute.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Attributes\\CachedAttribute.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:51:51.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Libraries\\Identity\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\ServiceExtensions.cs",
+              "RelativeToolTip": "Libraries\\Identity\\ServiceExtensions.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAewBkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:51:29.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Services\\Concrete\\AccountService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Identity\\Services\\Concrete\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Services\\Concrete\\AccountService.cs",
+              "RelativeToolTip": "Libraries\\Identity\\Services\\Concrete\\AccountService.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAuwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:39:03.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenBlacklistService.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Services\\Concrete\\TokenBlacklistService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Identity\\Services\\Concrete\\TokenBlacklistService.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Services\\Concrete\\TokenBlacklistService.cs",
+              "RelativeToolTip": "Libraries\\Identity\\Services\\Concrete\\TokenBlacklistService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:45:47.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Libraries\\Caching\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\ServiceExtensions.cs",
+              "RelativeToolTip": "Libraries\\Caching\\ServiceExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:58:21.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthenticatedUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Services\\AuthenticatedUserService.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Services\\AuthenticatedUserService.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Services\\AuthenticatedUserService.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Services\\AuthenticatedUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:44:37.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Helpers\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Helpers\\MappingProfiles.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Helpers\\MappingProfiles.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Helpers\\MappingProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:51:58.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Contexts\\IdentityContext.cs",
+              "RelativeDocumentMoniker": "Libraries\\Identity\\Contexts\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Contexts\\IdentityContext.cs",
+              "RelativeToolTip": "Libraries\\Identity\\Contexts\\IdentityContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:51:07.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Services\\Interfaces\\IAccountService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Identity\\Services\\Interfaces\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Services\\Interfaces\\IAccountService.cs",
+              "RelativeToolTip": "Libraries\\Identity\\Services\\Interfaces\\IAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:51:23.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IdentityContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\IdentityContextFactory.cs",
+              "RelativeDocumentMoniker": "Libraries\\Identity\\IdentityContextFactory.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\IdentityContextFactory.cs",
+              "RelativeToolTip": "Libraries\\Identity\\IdentityContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:51:25.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Presentations\\WebApi\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Presentations\\WebApi\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:54:26.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Core\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Libraries\\Core\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\Ant\u00F3nio\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Core\\ServiceExtensions.cs",
+              "RelativeToolTip": "Libraries\\Core\\ServiceExtensions.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:50:52.116Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

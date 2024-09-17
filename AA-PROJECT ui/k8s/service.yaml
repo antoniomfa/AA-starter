@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: AA-PROJECT-service
+  namespace: AA-PROJECT
+spec:
+  selector:
+    app: AA-PROJECT
+  type: ClusterIP
+  ports:
+    - name: AA-PROJECT-port
+      protocol: TCP
+      port: 8080
+      targetPort: 80

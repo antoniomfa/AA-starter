@@ -1,0 +1,10 @@
+<div style="margin-right: 10px;" class="avatar-container"
+	[ngStyle]="{'background-color': backgroundColor, 'color': contrastingColor}" (click)="avatarClick($event)">
+	<img *ngIf="user && user.avatar" [src]="user?.avatar" class="avatar" [alt]="initials || ''">
+	<span *ngIf="user && initials && !user.avatar" class="initials">
+		{{initials}}
+	</span>
+	<i *ngIf="!user" class="material-icons">perm_identity</i>
+	<span *ngIf="!isLoggedIn">Login</span>
+	<span *ngIf="isLoggedIn" (click)="logout3()">Logout</span>
+</div>

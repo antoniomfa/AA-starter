@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: AA-PROJECT
+  namespace: AA-PROJECT
+  labels:
+    app: AA-PROJECT
+spec:
+  selector:
+    matchLabels:
+      app: AA-PROJECT
+  template:
+    metadata:
+      labels:
+        app: AA-PROJECT
+    spec:
+      containers:
+        - name: AA-PROJECT
+          image: keithstric/AA-PROJECT:latest
+          imagePullPolicy: Always
