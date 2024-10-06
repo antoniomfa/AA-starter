@@ -1,4 +1,4 @@
-# AA-startup
+# AA-starter
 Base structure for .net + angular
 
 
