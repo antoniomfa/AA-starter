@@ -1,9 +1,9 @@
-import {LogLevel, LogLevelNameMap} from '@core/services/logger/logger.interface';
-import {AppState} from '@core/root-store/models/app-state.model';
-import {AbstractTransport} from '@core/services/logger/abstract-transport';
-import {LogEntry} from '@core/services/logger/log-entry';
-import {ServiceLocator} from '@core/services/service-locator';
-import {Store} from '@ngrx/store';
+import { LogLevel, LogLevelNameMap } from '@core/services/logger/logger.interface';
+import { AppState } from '@core/root-store/models/app-state.model';
+import { AbstractTransport } from '@core/services/logger/abstract-transport';
+import { LogEntry } from '@core/services/logger/log-entry';
+import { ServiceLocator } from '@core/services/service-locator';
+import { Store } from '@ngrx/store';
 
 /**
  * This is a console logger transport. Will display all received log entries in the console
@@ -42,7 +42,7 @@ export class ConsoleTransport extends AbstractTransport {
 					const store = injector.get(Store);
 					this.storeListener = store.select((appState: AppState) => appState)
 						.subscribe((appState) => {
-							this.appState = {...appState};
+							this.appState = { ...appState };
 						});
 				}
 			});
@@ -80,8 +80,8 @@ export class ConsoleTransport extends AbstractTransport {
 				styles: `${levelColor} font-weight: bold; font-size: 1.1em`,
 				value: `%c${LogLevelNameMap[logEntry.level]} - `
 			},
-			{partName: 'date', styles: 'color: default;', value: `%c${logEntry.entryDate} - `},
-			{partName: 'message', styles: levelColor, value: `%c${logEntry.message}`}
+			{ partName: 'date', styles: 'color: default;', value: `%c${logEntry.entryDate} - ` },
+			{ partName: 'message', styles: levelColor, value: `%c${logEntry.message}` }
 		];
 	}
 
@@ -100,7 +100,7 @@ export class ConsoleTransport extends AbstractTransport {
 				replacementVars.push(logPart.styles);
 			}
 		});
-		return {message, replacementVars};
+		return { message, replacementVars };
 	}
 
 	/**
@@ -128,7 +128,7 @@ export class ConsoleTransport extends AbstractTransport {
 				}
 			}
 		} else {
-			vars = [...vars, {appState: this.appState}];
+			vars = [...vars, { appState: this.appState }];
 			console.error(message, ...vars);
 		}
 		return logEntry;

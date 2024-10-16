@@ -1,10 +1,10 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
-import {Router} from '@angular/router';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {ForgotUserPasswordAction} from '@core/root-store/user/user.action';
-import {Store} from '@ngrx/store';
-import {User} from '@core/models/user.model';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { iUserState } from '@core/root-store/models/app-state.model';
+import { ForgotUserPasswordAction } from '@core/root-store/user/user.action';
+import { Store } from '@ngrx/store';
+import { User } from '@core/models/user.model';
 
 @Component({
 	selector: 'app-forgot-password',
@@ -12,16 +12,16 @@ import {User} from '@core/models/user.model';
 	styleUrls: ['../auth-shared-styles.scss']
 })
 export class ForgotPasswordComponent implements OnInit, OnDestroy {
-	forgotPwForm: FormGroup;
-	email: FormControl = new FormControl('');
-	new_password: FormControl = new FormControl('');
-	verify_password: FormControl = new FormControl('');
+	forgotPwForm: UntypedFormGroup;
+	email: UntypedFormControl = new UntypedFormControl('');
+	new_password: UntypedFormControl = new UntypedFormControl('');
+	verify_password: UntypedFormControl = new UntypedFormControl('');
 	user: any;
 
 	constructor(
-		private _formBuilder: FormBuilder,
+		private _formBuilder: UntypedFormBuilder,
 		private _router: Router,
-		private store: Store<{user: iUserState}>
+		private store: Store<{ user: iUserState }>
 	) { }
 
 	ngOnInit(): void {

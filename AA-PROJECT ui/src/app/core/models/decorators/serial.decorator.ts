@@ -1,4 +1,4 @@
-import {Serial, serialMetadataKey} from '../serializers/serial';
+import { Serial, serialMetadataKey } from '../serializers/serial';
 
 export type Serializable = Serial<any, any> | [Serial<any, any>];
 

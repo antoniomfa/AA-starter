@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 /**
  * The default footer component
@@ -20,8 +20,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class SiteFooterComponent implements OnInit {
 
-	constructor() {	}
+	constructor() { }
 
-	ngOnInit(): void {	}
+	ngOnInit(): void { }
 
 }

@@ -1,4 +1,4 @@
-import {SnackbarMessageTypes} from '@shared/components/snack-bar/snack-bar.interface';
+import { SnackbarMessageTypes } from '@shared/components/snack-bar/snack-bar.interface';
 
 export enum LogLevel {
 	error,

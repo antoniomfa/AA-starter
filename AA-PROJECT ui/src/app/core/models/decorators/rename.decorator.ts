@@ -1,4 +1,4 @@
-import {modelKeyMetadataKey, rawKeyMetadataKey} from '../serializers/serial';
+import { modelKeyMetadataKey, rawKeyMetadataKey } from '../serializers/serial';
 
 // decorator to rename a field when deserializing
 export function Rename(rawKey: string) {

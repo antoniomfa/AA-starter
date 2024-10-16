@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kP1Dc2R7LWg=",
+  "dgSpecHash": "y5Ly5x3jj0k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Identity.csproj",
+  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Identity\\Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\António\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\António\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

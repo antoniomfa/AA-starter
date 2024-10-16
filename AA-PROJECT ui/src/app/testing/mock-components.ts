@@ -1,9 +1,9 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {AuthService} from '@core/services/auth/auth.service';
-import {MockStore} from '@ngrx/store/testing';
-import {PageBreadcrumbHeaderComponent} from '@layout/components/page-breadcrumb-header/page-breadcrumb-header.component';
-import {BreadcrumbService} from '@layout/services/breadcrumb/breadcrumb.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { iUserState } from '@core/root-store/models/app-state.model';
+import { AuthService } from '@core/services/auth/auth.service';
+import { MockStore } from '@ngrx/store/testing';
+import { PageBreadcrumbHeaderComponent } from '@layout/components/page-breadcrumb-header/page-breadcrumb-header.component';
+import { BreadcrumbService } from '@layout/services/breadcrumb/breadcrumb.service';
 
 @Component({
 	selector: 'app-card',
@@ -39,7 +39,7 @@ export class MockPageNotFoundComponent {
 
 @Component({
 	selector: 'app-page-breadcrumb-header',
-		template: `<div class="flex-row page-header">
+	template: `<div class="flex-row page-header">
 			<app-breadcrumbs></app-breadcrumbs>
 			<span class="spacer"></span>
 			<button *ngIf="showAddButton" (click)="clickAddButton()" type="button">
@@ -47,7 +47,7 @@ export class MockPageNotFoundComponent {
 			</button>
 		</div>`
 })
-export class MockStorybookPageBreadcrumbHeaderComponent extends PageBreadcrumbHeaderComponent implements OnInit{
+export class MockStorybookPageBreadcrumbHeaderComponent extends PageBreadcrumbHeaderComponent implements OnInit {
 
 	constructor(
 		private _breadcrumbs: BreadcrumbService
@@ -56,9 +56,9 @@ export class MockStorybookPageBreadcrumbHeaderComponent extends PageBreadcrumbHe
 	}
 
 	ngOnInit() {
-		this._breadcrumbs.addBreadcrumb({url: 'http://localhost:4201', title: 'Home'});
-		this._breadcrumbs.addBreadcrumb({url: 'http://localhost:4201/page1', title: 'Page1'});
-		this._breadcrumbs.addBreadcrumb({url: 'http://localhost:4201/page2', title: 'Page2'});
+		this._breadcrumbs.addBreadcrumb({ url: 'http://localhost:4201', title: 'Home' });
+		this._breadcrumbs.addBreadcrumb({ url: 'http://localhost:4201/page1', title: 'Page1' });
+		this._breadcrumbs.addBreadcrumb({ url: 'http://localhost:4201/page2', title: 'Page2' });
 	}
 
 	/**
@@ -123,7 +123,6 @@ export class MockStorybookDialogContentComponent {
 export class MockStorybookUserAvatarComponent {
 
 	onAvatarClicked(evt: any) {
-		console.log('Avatar Clicked! evt=', evt);
 	}
 }
 
@@ -141,19 +140,17 @@ export class MockStorybookNoUserAvatarComponent implements OnInit {
 
 	constructor(
 		private _auth: AuthService,
-		private store: MockStore<{user: iUserState}>
-	) {}
+		private store: MockStore<{ user: iUserState }>
+	) { }
 
 	ngOnInit() {
 		this.store.select(store => store.user)
 			.subscribe((user) => {
-				console.log('user=', user);
 			});
-		this.store.setState({user: {data: null, loading: false, error: null}});
+		this.store.setState({ user: { data: null, loading: false, error: null } });
 	}
 
 	onAvatarClicked(evt: any) {
-		console.log('Avatar Clicked!', evt);
 	}
 }
 

@@ -8,6 +8,7 @@
 /* misc/app-global should be last in order to override any other styles */
 @import 'misc/flexbox';
 @import 'misc/app-global';
+// @import "~bootstrap/scss/bootstrap";
 
 body {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -22,3 +23,7 @@ body {
  */
 
 
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

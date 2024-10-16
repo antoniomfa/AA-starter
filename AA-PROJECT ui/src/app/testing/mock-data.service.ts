@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import userJson from 'src/app/testing/mock-data/user.json';
 
 /**

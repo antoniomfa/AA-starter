@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {SiteFooterComponent} from '@layout/components/site-footer/site-footer.component';
-import {SiteHeaderComponent} from '@layout/components/site-header/site-header.component';
-import {BehaviorSubject} from 'rxjs';
+import { Injectable } from '@angular/core';
+import { SiteFooterComponent } from '@layout/components/site-footer/site-footer.component';
+import { SiteHeaderComponent } from '@layout/components/site-header/site-header.component';
+import { BehaviorSubject } from 'rxjs';
 
 /**
  * This service is for updating pieces of the layout (i.e. Header, Footer and Sidebar)

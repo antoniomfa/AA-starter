@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj": {}
+    "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj": {}
   },
   "projects": {
-    "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj": {
+    "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj",
+        "projectUniqueName": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj",
         "projectName": "Caching",
-        "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj",
+        "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj",
         "packagesPath": "C:\\Users\\António\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\obj\\",
+        "outputPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Caching\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\António\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj"
+              "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj": {
+    "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\António\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\obj\\",
+        "outputPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\António\\AppData\\Roaming\\NuGet\\NuGet.Config",

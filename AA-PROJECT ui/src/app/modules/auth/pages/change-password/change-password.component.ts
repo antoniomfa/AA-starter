@@ -1,10 +1,10 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
-import {Router} from '@angular/router';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {ChangeUserPasswordAction} from '@core/root-store/user/user.action';
-import {Store} from '@ngrx/store';
-import {NotificationService} from '@core/services/notification/notification.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { iUserState } from '@core/root-store/models/app-state.model';
+import { ChangeUserPasswordAction } from '@core/root-store/user/user.action';
+import { Store } from '@ngrx/store';
+import { NotificationService } from '@core/services/notification/notification.service';
 
 @Component({
 	selector: 'app-change-password',
@@ -12,17 +12,17 @@ import {NotificationService} from '@core/services/notification/notification.serv
 	styleUrls: ['../auth-shared-styles.scss']
 })
 export class ChangePasswordComponent implements OnInit, OnDestroy {
-	changePwForm: FormGroup;
-	password: FormControl = new FormControl('');
-	new_password: FormControl = new FormControl('');
-	verify_password: FormControl = new FormControl('');
+	changePwForm: UntypedFormGroup;
+	password: UntypedFormControl = new UntypedFormControl('');
+	new_password: UntypedFormControl = new UntypedFormControl('');
+	verify_password: UntypedFormControl = new UntypedFormControl('');
 	user: any;
 
 	constructor(
-		private _formBuilder: FormBuilder,
+		private _formBuilder: UntypedFormBuilder,
 		private _router: Router,
 		private _notify: NotificationService,
-		private store: Store<{user: iUserState}>
+		private store: Store<{ user: iUserState }>
 	) { }
 
 	ngOnInit(): void {
@@ -30,7 +30,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 		this.store.select(state => state.user.data)
 			.subscribe((user) => {
 				this.user = user;
-		});
+			});
 	}
 
 	ngOnDestroy() { }

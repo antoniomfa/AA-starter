@@ -1,6 +1,6 @@
-import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
-import {AbstractControl} from '@angular/forms';
-import {Subscription} from 'rxjs';
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { AbstractControl } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 export interface iCharacterCounterEvent {
 	charCount: number;
@@ -63,7 +63,7 @@ export class CharacterCounterComponent implements OnInit, OnDestroy {
 	hidden: boolean = false;
 	subscriptions: Subscription = new Subscription();
 
-	constructor() {}
+	constructor() { }
 
 	ngOnInit(): void {
 		if (this.control) {
@@ -123,12 +123,12 @@ export class CharacterCounterComponent implements OnInit, OnDestroy {
 			this.currentCount = value.length;
 			this._setHidden();
 			if (value.length === this.max) {
-				this.maxReached.emit({charCount: value.length, control: ctrl});
+				this.maxReached.emit({ charCount: value.length, control: ctrl });
 			}
 			if (value.length > this.max) {
-				this.maxExceeded.emit({charCount: value.length, control: ctrl});
+				this.maxExceeded.emit({ charCount: value.length, control: ctrl });
 			}
-		}else{
+		} else {
 			this.remainingCount = this.max;
 			this.currentCount = 0;
 			this._setHidden();

@@ -1,4 +1,4 @@
-import {LoadingAction, LoadingActionTypes} from '@core/root-store/loading/loading.action';
+import { LoadingAction, LoadingActionTypes } from '@core/root-store/loading/loading.action';
 
 export function LoadingReducer(state: boolean = false, action: LoadingAction) {
 	switch (action.type) {

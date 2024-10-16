@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2HKSOa8V3/0=",
+  "dgSpecHash": "anr6mYF2kg4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Presentations\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Presentations\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\António\\.nuget\\packages\\aspnetcore.healthchecks.redis\\6.0.4\\aspnetcore.healthchecks.redis.6.0.4.nupkg.sha512",
     "C:\\Users\\António\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\6.0.2\\aspnetcore.healthchecks.sqlserver.6.0.2.nupkg.sha512",

@@ -1,12 +1,12 @@
-import {HttpClient, HttpErrorResponse, HttpHeaders, HttpParams, HttpResponse} from '@angular/common/http';
-import {Injectable} from '@angular/core';
-import {Router} from '@angular/router';
-import {ApiMethod, ApiRouteToClass} from '@core/interfaces/api.interface';
-import {HttpRequestConfig} from '@core/services/http/http.interface';
-import {Logger} from '@core/services/logger/logger';
-import {Observable} from 'rxjs';
-import {catchError, map} from 'rxjs/operators';
-import {AppErrorHandler} from '@core/services/error-handler/error-handler.service';
+import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams, HttpResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiMethod, ApiRouteToClass } from '@core/interfaces/api.interface';
+import { HttpRequestConfig } from '@core/services/http/http.interface';
+import { Logger } from '@core/services/logger/logger';
+import { Observable } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+import { AppErrorHandler } from '@core/services/error-handler/error-handler.service';
 
 /**
  * This service is for handling all http requests and responses. If an error occurs, handle the error.
@@ -22,7 +22,7 @@ export class HttpService {
 		private _http: HttpClient,
 		private _error: AppErrorHandler,
 		private _router: Router
-	) {}
+	) { }
 
 	/**
 	 * Make an http request
@@ -37,8 +37,8 @@ export class HttpService {
 		let reqObservable: Observable<any>;
 		if (method === ApiMethod.GET || method === ApiMethod.DELETE) {
 			if (!config && body) {
-				config = {observe: body};
-			}else if (config && body) {
+				config = { observe: body };
+			} else if (config && body) {
 				config.observe = body;
 			}
 		}

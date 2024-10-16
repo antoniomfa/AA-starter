@@ -1,7 +1,7 @@
-import {Params} from '@angular/router';
-import {User} from '@core/models/user.model';
-import {IFormsState} from '@core/root-store/forms';
-import {RouterReducerState} from '@ngrx/router-store';
+import { Params } from '@angular/router';
+import { User } from '@core/models/user.model';
+import { IFormsState } from '@core/root-store/forms';
+import { RouterReducerState } from '@ngrx/router-store';
 
 export interface iStateItem {
 	data: any;

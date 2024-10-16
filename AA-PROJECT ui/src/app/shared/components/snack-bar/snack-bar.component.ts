@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, ViewEncapsulation, Output} from '@angular/core';
-import {SnackbarAction, SnackbarMessageTypes} from '@shared/components/snack-bar/snack-bar.interface';
+import { Component, EventEmitter, Input, OnInit, ViewEncapsulation, Output } from '@angular/core';
+import { SnackbarAction, SnackbarMessageTypes } from '@shared/components/snack-bar/snack-bar.interface';
 
 /**
  * A toaster/snackbar component. Use SnackbarRef to display
@@ -43,9 +43,9 @@ export class SnackBarComponent implements OnInit {
 	@Input() action: SnackbarAction;
 	@Output() dismissSnackbar: EventEmitter<any> = new EventEmitter<any>();
 
-	constructor() {}
+	constructor() { }
 
-	ngOnInit(): void {}
+	ngOnInit(): void { }
 
 	dismiss() {
 		this.dismissSnackbar.emit();

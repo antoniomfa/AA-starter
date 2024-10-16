@@ -15,12 +15,16 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/AA-PROJECT",
+            "outputPath": {
+              "base": "dist/AA-PROJECT"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "zone.js",
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -32,21 +36,27 @@
               "src/scss/styles.scss"
             ],
             "scripts": [],
-						"allowedCommonJsDependencies": ["tinycolor2"],
-						"vendorChunk": true,
-						"extractLicenses": false,
-						"buildOptimizer": false,
-						"sourceMap": true,
-						"optimization": false,
-						"namedChunks": true
+            "allowedCommonJsDependencies": [
+              "tinycolor2"
+            ],
+            "extractLicenses": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true,
+            "browser": "src/main.ts",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "."
+              ]
+            }
           },
           "configurations": {
             "production": {
-							"baseHref": "/AA-PROJECT/",
-							"index": {
-								"input": "src/index.prod.html",
-								"output": "index.html"
-							},
+              "baseHref": "/AA-PROJECT/",
+              "index": {
+                "input": "src/index.prod.html",
+                "output": "index.html"
+              },
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -58,8 +68,6 @@
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -72,38 +80,40 @@
                   "maximumError": "10kb"
                 }
               ],
-              "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              "serviceWorker": "ngsw-config.json"
             }
           },
-					"defaultConfiguration": ""
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AA-PROJECT:build",
-            "proxyConfig": "./proxy.conf.json"
+            "proxyConfig": "./proxy.conf.json",
+            "buildTarget": "AA-PROJECT:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AA-PROJECT:build:production"
+              "buildTarget": "AA-PROJECT:build:production"
             },
-						"local": {
-							"browserTarget": "AA-PROJECT:build:local"
-						}
-					}
+            "local": {
+              "buildTarget": "AA-PROJECT:build:local"
+            }
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AA-PROJECT:build"
+            "buildTarget": "AA-PROJECT:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "zone.js",
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
@@ -112,7 +122,7 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-							"src/scss/styles.scss"
+              "src/scss/styles.scss"
             ],
             "scripts": []
           }
@@ -143,6 +153,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "AA-PROJECT"
+    }
+  }
 }

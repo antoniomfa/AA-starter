@@ -1,7 +1,7 @@
-import {HttpRequest} from '@angular/common/http';
-import {Injectable} from '@angular/core';
-import {SetLoadingAction} from '@core/root-store/loading/loading.action';
-import {Store} from '@ngrx/store';
+import { HttpRequest } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { SetLoadingAction } from '@core/root-store/loading/loading.action';
+import { Store } from '@ngrx/store';
 
 /**
  * This service is for managing the state of a loading spinner
@@ -13,8 +13,8 @@ export class LoadingService {
 	loadingMap: Map<HttpRequest<any>, boolean> = new Map<HttpRequest<any>, boolean>();
 
 	constructor(
-		private store: Store<{loading: boolean}>
-	) {}
+		private store: Store<{ loading: boolean }>
+	) { }
 
 	/**
 	 * This method is only called from the {@link HttpRequestInterceptor}

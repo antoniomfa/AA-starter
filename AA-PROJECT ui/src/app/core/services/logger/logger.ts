@@ -1,9 +1,9 @@
-import {LogLevel, SnackbarMessageLoggingMap} from '@core/services/logger/logger.interface';
-import {AbstractTransport} from '@core/services/logger/abstract-transport';
-import {ConsoleTransport} from '@core/services/logger/console-transport';
-import {LogEntry} from '@core/services/logger/log-entry';
-import {NotificationService} from '@core/services/notification/notification.service';
-import {environment, LOG_LEVEL} from 'src/environments/environment';
+import { LogLevel, SnackbarMessageLoggingMap } from '@core/services/logger/logger.interface';
+import { AbstractTransport } from '@core/services/logger/abstract-transport';
+import { ConsoleTransport } from '@core/services/logger/console-transport';
+import { LogEntry } from '@core/services/logger/log-entry';
+import { NotificationService } from '@core/services/notification/notification.service';
+import { environment, LOG_LEVEL } from 'src/environments/environment';
 
 
 /**

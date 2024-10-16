@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5mAl6KxCeFY=",
+  "dgSpecHash": "Jm1uudOtvcg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\António\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\António\\.nuget\\packages\\mailkit\\2.11.1\\mailkit.2.11.1.nupkg.sha512",

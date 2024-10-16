@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9JZm5J6Dt2I=",
+  "dgSpecHash": "4kx1W9697aY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj",
+  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Caching\\Caching.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\António\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.1.25\\microsoft.aspnetcore.nodeservices.3.1.25.nupkg.sha512",
     "C:\\Users\\António\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.1.25\\microsoft.aspnetcore.spaservices.3.1.25.nupkg.sha512",

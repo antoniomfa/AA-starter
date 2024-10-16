@@ -1,5 +1,5 @@
-import {LogLevel} from '@core/services/logger/logger.interface';
-import {LogEntry} from '@core/services/logger/log-entry';
+import { LogLevel } from '@core/services/logger/logger.interface';
+import { LogEntry } from '@core/services/logger/log-entry';
 
 export interface FormattedMessage {
 	message: string;
@@ -26,7 +26,7 @@ export abstract class AbstractTransport {
 	 */
 	abstract readonly shouldNotifyUser: boolean;
 
-	protected constructor(public level: LogLevel) {}
+	protected constructor(public level: LogLevel) { }
 
 	/**
 	 * The name of this transport
@@ -49,7 +49,7 @@ export abstract class AbstractTransport {
 	 * This should be a custom formatter for the log message
 	 * @param logEntry
 	 */
-	protected formatMessage(logEntry: LogEntry): FormattedMessage | void {}
+	protected formatMessage(logEntry: LogEntry): FormattedMessage | void { }
 
 	/**
 	 * Called from LoggerService to ensure that shouldNotifyUser, shouldPersist and

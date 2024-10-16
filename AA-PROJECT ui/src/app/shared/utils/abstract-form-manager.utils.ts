@@ -1,6 +1,6 @@
-import {AbstractControl, FormArray, FormGroup} from '@angular/forms';
-import {FormControlStatus} from '@shared/services/form-helper/form-helper.service';
-import {BehaviorSubject, Observable, Subject, Subscription} from 'rxjs';
+import { AbstractControl, FormArray, FormGroup } from '@angular/forms';
+import { FormControlStatus } from '@shared/services/form-helper/form-helper.service';
+import { BehaviorSubject, Observable, Subject, Subscription } from 'rxjs';
 
 
 type AppFormControl<T extends AbstractControl> = T;
@@ -17,7 +17,7 @@ export enum FormManagerEvents {
  * An event object that contains the event name and any required data that needs to be
  * passed to the event
  */
-export type FormManagerEvent = {eventName: FormManagerEvents, data: any};
+export type FormManagerEvent = { eventName: FormManagerEvents, data: any };
 
 /**
  * This class is meant to assist in multi-form validation scenarios (i.e. form3's validity needs

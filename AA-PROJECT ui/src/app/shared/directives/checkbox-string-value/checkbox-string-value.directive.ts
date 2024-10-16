@@ -1,8 +1,8 @@
-import {AfterViewInit, Directive, ElementRef, EventEmitter, Input, OnDestroy, Output} from '@angular/core';
-import {FormControlDirective, FormControlName} from '@angular/forms';
-import {Logger} from '@core/services/logger/logger';
-import {fromEvent, Subscription} from 'rxjs';
-import {map} from 'rxjs/operators';
+import { AfterViewInit, Directive, ElementRef, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
+import { FormControlDirective, FormControlName } from '@angular/forms';
+import { Logger } from '@core/services/logger/logger';
+import { fromEvent, Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 /**
  * This directive is for maintaining a value other than a boolean for a checkbox
@@ -69,7 +69,7 @@ export class CheckboxStringValueDirective implements AfterViewInit, OnDestroy {
 			this.control.setValue(newValue);
 			this.checkboxValueUpdated.emit(newValue);
 			Logger.silly(`[CheckboxStringValueDirective._updateFormControlValue] set the value of ${this.fieldName} to ${this.control.value}`);
-		}else{
+		} else {
 			throw new Error(`[CheckboxStringValueDirective._updateFormControlValue] FormControl ${this.fieldName} not available`);
 		}
 	}

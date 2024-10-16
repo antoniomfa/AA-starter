@@ -4,28 +4,10 @@ export class RegisterRequest {
 
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public username: string;
-    /// <summary>
-    /// 
-    /// </summary>
-    public firstName: string;
-    /// <summary>
-    /// 
-    /// </summary>
-    public lastName: string;
-    /// <summary>
-    /// 
-    /// </summary>
-    public email: string
-    /// <summary>
-    /// 
-    /// </summary>
-    public password: string
-    /// <summary>
-    /// 
-    /// </summary>
-    public confirmPassword: string
+    UserName: string;       // Username field
+    FirstName: string;      // First Name field
+    LastName: string;       // Last Name field
+    Email: string;          // Email field
+    Password: string;       // Password field
+    ConfirmPassword: string; // Confirm Password field
 }

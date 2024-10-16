@@ -17,16 +17,10 @@
 	<ng-template appViewRef></ng-template>
 </div>
 <div class="modal-footer flex-row">
-	<button
-		*ngIf="!hideCancelButton"
-		class="btn rds--button--primary"
-		(click)="onCancel()">
+	<button *ngIf="!hideCancelButton" class="btn rds--button--primary" (click)="onCancel()">
 		{{cancelButtonLabel}}
 	</button>
-	<button
-		*ngIf="!hideConfirmButton"
-		class="btn btn-primary"
-		[disabled]="formGroup ? formGroup.invalid : false"
+	<button *ngIf="!hideConfirmButton" class="btn btn-primary" [disabled]="formGroup ? formGroup.invalid : false"
 		(click)="onConfirm()">
 		{{confirmButtonLabel}}
 	</button>

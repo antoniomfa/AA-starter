@@ -1,5 +1,5 @@
-import {Action} from '@ngrx/store';
-import {ChangeUserPassword, ForgotUserPassword, RawUser, User} from '@core/models/user.model';
+import { Action } from '@ngrx/store';
+import { ChangeUserPassword, ForgotUserPassword, RawUser, User } from '@core/models/user.model';
 
 export enum UserActionTypes {
 	LOGIN_USER = '[USER] Login',
@@ -21,77 +21,77 @@ export enum UserActionTypes {
 
 export class LoginUserAction implements Action {
 	readonly type = UserActionTypes.LOGIN_USER;
-	constructor(public payload: RawUser) {}
+	constructor(public payload: RawUser) { }
 }
 
 export class LoginUserSuccessAction implements Action {
 	readonly type = UserActionTypes.LOGIN_USER_SUCCESS;
-	constructor(public payload: User) {}
+	constructor(public payload: User) { }
 }
 
 export class LoginUserFailureAction implements Action {
 	readonly type = UserActionTypes.LOGIN_USER_FAILURE;
-	constructor(public payload: Error) {}
+	constructor(public payload: Error) { }
 }
 
 export class LogOutUserAction implements Action {
 	readonly type = UserActionTypes.LOGOUT_USER;
-	constructor() {}
+	constructor() { }
 }
 
 export class LogOutUserSuccessAction implements Action {
 	readonly type = UserActionTypes.LOGOUT_USER_SUCCESS;
-	constructor() {}
+	constructor() { }
 }
 
 export class LogOutUserFailureAction implements Action {
 	readonly type = UserActionTypes.LOGOUT_USER_FAILURE;
-	constructor(public payload: Error) {}
+	constructor(public payload: Error) { }
 }
 
 export class RegisterUserAction implements Action {
 	readonly type = UserActionTypes.REGISTER_USER;
-	constructor(public payload: RawUser) {}
+	constructor(public payload: RawUser) { }
 }
 
 export class RegisterUserSuccessAction implements Action {
 	readonly type = UserActionTypes.REGISTER_USER_SUCCESS;
-	constructor(public payload: User) {}
+	constructor(public payload: User) { }
 }
 
 export class RegisterUserFailureAction implements Action {
 	readonly type = UserActionTypes.REGISTER_USER_FAILURE;
-	constructor(public payload: Error) {}
+	constructor(public payload: Error) { }
 }
 
 export class ChangeUserPasswordAction implements Action {
 	readonly type = UserActionTypes.CHANGE_PASSWORD;
-	constructor(public payload: ChangeUserPassword) {}
+	constructor(public payload: ChangeUserPassword) { }
 }
 
 export class ChangeUserPasswordSuccessAction implements Action {
 	readonly type = UserActionTypes.CHANGE_PASSWORD_SUCCESS;
-	constructor(public payload: User) {}
+	constructor(public payload: User) { }
 }
 
 export class ChangeUserPasswordFailureAction implements Action {
 	readonly type = UserActionTypes.CHANGE_PASSWORD_FAILURE;
-	constructor(public payload: Error) {}
+	constructor(public payload: Error) { }
 }
 
 export class ForgotUserPasswordAction implements Action {
 	readonly type = UserActionTypes.FORGOT_PASSWORD;
-	constructor(public payload: ForgotUserPassword) {}
+	constructor(public payload: ForgotUserPassword) { }
 }
 
 export class ForgotUserPasswordSuccessAction implements Action {
 	readonly type = UserActionTypes.FORGOT_PASSWORD_SUCCESS;
-	constructor(public payload: User) {}
+	constructor(public payload: User) { }
 }
 
 export class ForgotUserPasswordFailureAction implements Action {
 	readonly type = UserActionTypes.FORGOT_PASSWORD_FAILURE;
-	constructor(public payload: Error) {}
+	constructor(public payload: Error) { }
 }
 
 export type UserAction = LoginUserAction

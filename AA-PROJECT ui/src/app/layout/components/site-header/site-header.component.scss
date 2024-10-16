@@ -1,54 +1,94 @@
-@import 'src/scss/variables';
-@import 'src/scss/mixins';
-
-.site-header-container {
-	background-color: $primary;
+/* Basic navbar layout */
+.navbar {
+	background-color: #333;
+	padding: 10px;
 	color: white;
+}
+
+.title {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-container {
+	display: inline-block;
+	justify-content: space-between;
 	align-items: center;
-	height: 64px;
-	padding: 0 10px;
+	flex-wrap: wrap;
+	width: 100%;
+}
 
-	.title {
-		font-size: 1.5rem;
-		font-weight: 500;
-		color: white;
+.navbar-title h1 {
+	margin: 0;
+}
 
-		&:hover {
-			text-decoration: none;
-			cursor: pointer;
-			color: white;
-		}
+.navbar-login {
+	margin-right: 20px;
+}
+
+.login-btn {
+	// background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	cursor: pointer;
+	float: right;
+}
+
+.navbar-toggle {
+	display: none;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	cursor: pointer;
+	float: right;
+}
+
+/* Hide the menu by default in mobile view */
+.navbar-menu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	transition: max-height 0.3s ease-out;
+	overflow: hidden;
+	float: right;
+}
+
+.navbar-menu li {
+	margin-right: 10px;
+}
+
+.navbar-menu li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+	.navbar-container {
+		flex-direction: column;
 	}
 
-	.header-link {
-		margin-right: 15px;
-		padding: 4px;
-		border-radius: 4px;
-		background-color: $primary;
-		color: white;
-
-		&.active {
-			background-color: $app-info;
-			color: black;
-			@include elevation(2);
-			text-decoration: none;
-		}
-
-		&:hover {
-			background-color: $app-info;
-			color: black;
-			@include elevation(2);
-			text-decoration: none;
-		}
+	.navbar-title {
+		margin-bottom: 10px;
 	}
 
-	.userIcon {
-		text-decoration: none;
+	/* Show the toggle button */
+	.navbar-toggle {
+		display: block;
+	}
 
-		&:hover {
-			color: $accent;
-			cursor: pointer;
-			text-decoration: none;
-		}
+	/* Stack the menu items vertically */
+	.navbar-menu {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* When the menu is open, display the menu items */
+	.navbar-menu.open {
+		display: flex;
 	}
 }

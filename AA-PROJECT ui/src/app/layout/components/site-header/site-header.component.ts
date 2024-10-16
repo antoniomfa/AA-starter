@@ -1,12 +1,13 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {NavigationEnd, Router} from '@angular/router';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {LogOutUserAction} from '@core/root-store/user/user.action';
-import {Store} from '@ngrx/store';
-import {User} from '@core/models/user.model';
-import {Subscription} from 'rxjs';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
-import {PROJECT_NAME} from 'src/environments/environment';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { iUserState } from '@core/root-store/models/app-state.model';
+import { LogOutUserAction } from '@core/root-store/user/user.action';
+import { Store } from '@ngrx/store';
+import { User } from '@core/models/user.model';
+import { Subscription } from 'rxjs';
+import { LocalStorageService } from '@core/services/local-storage/local-storage.service';
+import { PROJECT_NAME } from 'src/environments/environment';
+import { HostListener } from '@angular/core';
 
 /**
  * The default header
@@ -32,14 +33,23 @@ export class SiteHeaderComponent implements OnInit, OnDestroy {
 	user: any;
 	subscriptions: Subscription = new Subscription();
 	active: 'about' | 'features';
+	isOptionsVisible = false;
+	showToggleButton = false;
+
+	pageTitle = 'My App';
+	isLoggedIn = false;
+	isMobile = false;
+	menuOpen = false;
 
 	constructor(
 		private _storage: LocalStorageService,
 		private _router: Router,
-		private store: Store<{user: iUserState}>
-	) {	}
+		private store: Store<{ user: iUserState }>
+	) { }
 
 	ngOnInit(): void {
+		this.checkMobileView();
+		this.showToggleButton = window.innerWidth < 1200; // Initial check
 		this.listenToAuth();
 		this.listenToRoute();
 	}
@@ -47,6 +57,43 @@ export class SiteHeaderComponent implements OnInit, OnDestroy {
 	ngOnDestroy() {
 		this.subscriptions.unsubscribe();
 	}
+
+	toggleOptions() {
+		this.isOptionsVisible = !this.isOptionsVisible;
+	}
+
+	// Mock login and logout methods
+	login() {
+		this.isLoggedIn = true;
+	}
+
+	logout() {
+		this.isLoggedIn = false;
+	}
+
+	toggleMenu() {
+		this.menuOpen = !this.menuOpen;
+	}
+
+	@HostListener('window:resize', ['$event'])
+	onResize(event: any) {
+		this.checkMobileView();
+	}
+
+	checkMobileView() {
+		this.isMobile = window.innerWidth < 768;
+		if (!this.isMobile) {
+			this.menuOpen = false;
+		}
+	}
+
+	// @HostListener('window:resize', ['$event'])
+	// onResize(event) {
+	// 	this.showToggleButton = window.innerWidth < 1200;
+	// 	if (this.showToggleButton && !this.isOptionsVisible) {
+	// 		this.isOptionsVisible = false; // Ensure options are hidden on large screens
+	// 	}
+	// }
 
 	/**
 	 * Listen to route changes and if about or features is the active route
@@ -80,7 +127,7 @@ export class SiteHeaderComponent implements OnInit, OnDestroy {
 	/**
 	 * Logout the current user
 	 */
-	logout() {
-		this.store.dispatch(new LogOutUserAction());
-	}
+	// logout() {
+	// 	this.store.dispatch(new LogOutUserAction());
+	// }
 }

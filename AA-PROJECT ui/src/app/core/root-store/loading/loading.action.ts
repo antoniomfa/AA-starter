@@ -1,4 +1,4 @@
-import {Action} from '@ngrx/store';
+import { Action } from '@ngrx/store';
 
 export enum LoadingActionTypes {
 	SET_LOADING = '[ROOT] Set Loading'
@@ -6,7 +6,7 @@ export enum LoadingActionTypes {
 
 export class SetLoadingAction implements Action {
 	readonly type = LoadingActionTypes.SET_LOADING;
-	constructor(public payload: boolean){}
+	constructor(public payload: boolean) { }
 }
 
 export type LoadingAction = SetLoadingAction;

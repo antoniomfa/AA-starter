@@ -8999,11 +8999,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Identity.csproj",
+      "projectUniqueName": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Identity\\Identity.csproj",
       "projectName": "Identity",
-      "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\Identity.csproj",
+      "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Identity\\Identity.csproj",
       "packagesPath": "C:\\Users\\António\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Identity\\obj\\",
+      "outputPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Identity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\António\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9021,11 +9021,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Core\\Core.csproj"
+            "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Core\\Core.csproj"
             },
-            "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj"
+            "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Models\\Models.csproj"
             }
           }
         }

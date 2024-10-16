@@ -1,6 +1,6 @@
-import {selectUserFeatureState} from '@core/root-store';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {createSelector} from '@ngrx/store';
+import { selectUserFeatureState } from '@core/root-store';
+import { iUserState } from '@core/root-store/models/app-state.model';
+import { createSelector } from '@ngrx/store';
 import * as fromUser from './user.reducer';
 
 
@@ -58,5 +58,5 @@ export const selectAvatarDependencies = createSelector(
 	selectUserInitials,
 	selectUserAvatar,
 	selectUserEmail,
-	(initials, userAvatar, emailAddress) => ({initials, userAvatar, emailAddress})
+	(initials, userAvatar, emailAddress) => ({ initials, userAvatar, emailAddress })
 );

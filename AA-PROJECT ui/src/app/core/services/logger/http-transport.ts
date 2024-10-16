@@ -1,14 +1,14 @@
-import {HttpClient} from '@angular/common/http';
-import {ApiMethod} from '@core/interfaces/api.interface';
-import {AppState} from '@core/root-store/models/app-state.model';
-import {HttpService} from '@core/services/http/http.service';
-import {LogLevel} from '@core/services/logger/logger.interface';
-import {AbstractTransport} from '@core/services/logger/abstract-transport';
-import {LogEntry} from '@core/services/logger/log-entry';
-import {ServiceLocator} from '@core/services/service-locator';
-import {Store} from '@ngrx/store';
-import {BehaviorSubject, throwError} from 'rxjs';
-import {catchError} from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { ApiMethod } from '@core/interfaces/api.interface';
+import { AppState } from '@core/root-store/models/app-state.model';
+import { HttpService } from '@core/services/http/http.service';
+import { LogLevel } from '@core/services/logger/logger.interface';
+import { AbstractTransport } from '@core/services/logger/abstract-transport';
+import { LogEntry } from '@core/services/logger/log-entry';
+import { ServiceLocator } from '@core/services/service-locator';
+import { Store } from '@ngrx/store';
+import { BehaviorSubject, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 export class HttpTransport extends AbstractTransport {
 	/**
@@ -69,7 +69,7 @@ export class HttpTransport extends AbstractTransport {
 					const store = injector.get(Store);
 					this.storeListener = store.select((appState: AppState) => appState)
 						.subscribe((appState) => {
-							this.appState = {...appState};
+							this.appState = { ...appState };
 						});
 				}
 			});

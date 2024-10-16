@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {LocalStorageTypes} from '@core/services/local-storage/local-storage.interface';
-import {PROJECT_NAME} from 'src/environments/environment';
+import { Injectable } from '@angular/core';
+import { LocalStorageTypes } from '@core/services/local-storage/local-storage.interface';
+import { PROJECT_NAME } from 'src/environments/environment';
 
 @Injectable({
 	providedIn: 'root'
@@ -53,5 +53,4 @@ export class LocalStorageService {
 		const storage = LocalStorageService._getStorage(storageType);
 		storage.removeItem(`${PROJECT_NAME}:${key}`);
 	}
-
 }

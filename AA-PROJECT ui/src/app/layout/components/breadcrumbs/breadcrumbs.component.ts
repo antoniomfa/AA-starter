@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {Subscription} from 'rxjs';
-import {Breadcrumb} from '@layout/interfaces/breadcrumb.interface';
-import {BreadcrumbService} from '@layout/services/breadcrumb/breadcrumb.service';
+import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { Breadcrumb } from '@layout/interfaces/breadcrumb.interface';
+import { BreadcrumbService } from '@layout/services/breadcrumb/breadcrumb.service';
 
 @Component({
 	selector: 'app-breadcrumbs',

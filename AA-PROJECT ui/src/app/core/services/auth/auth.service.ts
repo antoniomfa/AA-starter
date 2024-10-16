@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Logger } from '@core/services/logger/logger';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { ApiEndpoints, ApiMethod } from '@core/interfaces/api.interface';
 import { LocalStorageTypes } from '@core/services/local-storage/local-storage.interface';
@@ -11,6 +11,7 @@ import { LocalStorageService } from '@core/services/local-storage/local-storage.
 import { AuthenticationRequest } from '@core/models/AuthenticationRequest.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { LocalStorageServ } from './LocalStorageServ.service';
+import { RegisterRequest } from '@core/models/RegisterRequest.model';
 
 @Injectable({
 	providedIn: 'root'
@@ -119,7 +120,6 @@ export class AuthService {
 		// return this.http.get("https://localhost:44372/api/Account/logout", { headers: headers });
 
 		return this.http.post('https://localhost:44372/api/account/logout', { headers: headers }).subscribe(() => {
-			console.log('logged out');
 		});
 	}
 
@@ -134,6 +134,10 @@ export class AuthService {
 				Logger.info('User registered', rawUser);
 				return this.updateLocalUser(rawUser);
 			}));
+	}
+
+	register2(request: RegisterRequest): Observable<any> {
+		return this.http.post('https://localhost:44372/api/account/register', request);
 	}
 
 	/**

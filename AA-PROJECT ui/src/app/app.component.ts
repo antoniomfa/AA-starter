@@ -1,13 +1,18 @@
-import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
-import {RouterStateService} from '@core/services/router-state/router-state.service';
-import {LayoutService} from '@layout/services/layout/layout.service';
-import {Store} from '@ngrx/store';
-import {Subscription} from 'rxjs';
-import {delay} from 'rxjs/operators';
-import {SiteFooterComponent} from '@layout/components/site-footer/site-footer.component';
-import {SiteHeaderComponent} from '@layout/components/site-header/site-header.component';
-import {LoadingService} from '@layout/services/loading/loading.service';
-import {PROJECT_NAME} from 'src/environments/environment';
+// import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+// import { RouterStateService } from '@core/services/router-state/router-state.service';
+// import { LayoutService } from '@layout/services/layout/layout.service';
+// import { Store } from '@ngrx/store';
+// import { Subscription } from 'rxjs';
+// import { delay } from 'rxjs/operators';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { RouterStateService } from '@core/services/router-state/router-state.service';
+import { SiteFooterComponent } from '@layout/components/site-footer/site-footer.component';
+import { SiteHeaderComponent } from '@layout/components/site-header/site-header.component';
+import { LayoutService } from '@layout/services/layout/layout.service';
+import { LoadingService } from '@layout/services/loading/loading.service';
+import { Store } from '@ngrx/store';
+import { Subscription } from 'rxjs';
+import { PROJECT_NAME } from 'src/environments/environment';
 
 @Component({
 	selector: 'app-root',
@@ -26,7 +31,7 @@ export class AppComponent implements OnInit, OnDestroy {
 		private _loading: LoadingService,
 		private _cdr: ChangeDetectorRef,
 		private _layout: LayoutService,
-		private store: Store<{loading: boolean}>,
+		private store: Store<{ loading: boolean }>,
 		private _routerState: RouterStateService
 	) {
 	}
@@ -35,7 +40,7 @@ export class AppComponent implements OnInit, OnDestroy {
 		this.listenToHeader();
 		this.listenToFooter();
 		this.listenToSidebar();
-		this.listenToLoading();
+		// this.listenToLoading();
 	}
 
 	ngOnDestroy() {
@@ -78,11 +83,11 @@ export class AppComponent implements OnInit, OnDestroy {
 	 * Listen to the loading service's loadingSub and
 	 * toggle visibility of the spinner
 	 */
-	listenToLoading() {
-		this.store.select(store => store.loading)
-			.pipe(delay(0))
-			.subscribe((loading) => {
-				this.loading = loading;
-			});
-	}
+	// listenToLoading() {
+	// 	this.store.select(store => store.loading)
+	// 		.pipe(delay(0))
+	// 		.subscribe((loading) => {
+	// 			this.loading = loading;
+	// 		});
+	// }
 }

@@ -1,5 +1,5 @@
 // decorator to prevent class member from being serialized
-import {internalMetadataKey} from '../serializers/serial';
+import { internalMetadataKey } from '../serializers/serial';
 
 export function Internal() {
 	return (target: any, propertyKey: string) => {

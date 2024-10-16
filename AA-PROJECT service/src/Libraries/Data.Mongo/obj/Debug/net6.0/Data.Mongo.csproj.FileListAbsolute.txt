@@ -24,3 +24,16 @@ C:\Users\António\Documents\Programming\AA-PROJECT service\src\Libraries\Data.Mo
 C:\Users\António\Documents\Programming\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\refint\Data.Mongo.dll
 C:\Users\António\Documents\Programming\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.pdb
 C:\Users\António\Documents\Programming\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\ref\Data.Mongo.dll
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\bin\Debug\net6.0\Data.Mongo.deps.json
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\bin\Debug\net6.0\Data.Mongo.dll
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\bin\Debug\net6.0\Data.Mongo.pdb
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.csproj.AssemblyReference.cache
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.AssemblyInfoInputs.cache
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.AssemblyInfo.cs
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.csproj.CoreCompileInputs.cache
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.sourcelink.json
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.dll
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\refint\Data.Mongo.dll
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\Data.Mongo.pdb
+C:\Users\António\Documents\Programming\AA-startup\AA-PROJECT service\src\Libraries\Data.Mongo\obj\Debug\net6.0\ref\Data.Mongo.dll

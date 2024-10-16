@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {SiteHeaderComponent} from '@layout/components/site-header/site-header.component';
+import { Component } from '@angular/core';
+import { SiteHeaderComponent } from '@layout/components/site-header/site-header.component';
 
 @Component({
 	selector: 'app-home-header',

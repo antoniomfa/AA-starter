@@ -1,5 +1,5 @@
-import {Injector} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import { Injector } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 /**
  * This class is for locating a Service for use in a plain old class

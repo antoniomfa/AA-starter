@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ad27TIEPuA=",
+  "dgSpecHash": "KPA9hIEPxnI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-PROJECT service\\src\\Libraries\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Users\\António\\Documents\\Programming\\AA-startup\\AA-PROJECT service\\src\\Libraries\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\António\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\António\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\6.0.5\\microsoft.aspnetcore.spaservices.extensions.6.0.5.nupkg.sha512",

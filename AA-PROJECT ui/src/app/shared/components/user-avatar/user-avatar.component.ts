@@ -1,12 +1,16 @@
+// import { Component, EventEmitter, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
 import { Component, EventEmitter, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from '@core/models/user.model';
 import { iUserState } from '@core/root-store/models/app-state.model';
+// import { Store } from '@ngrx/store';
+// import { Subscription } from 'rxjs';
+import { AuthService } from '@core/services/auth/auth.service';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
-import { AuthService } from '@core/services/auth/auth.service';
-import * as tinycolor from 'tinycolor2';
-import { first } from 'rxjs/operators';
-import { Router } from '@angular/router';
+// import * as tinycolor from 'tinycolor2';
+// import { first } from 'rxjs/operators';
+// import { Router } from '@angular/router';
 
 /**
  * A user avatar component. Use the following classes to control the size in pixels:
@@ -48,7 +52,7 @@ export class UserAvatarComponent implements OnInit, OnDestroy {
 				if (this.user) {
 					this.initials = this._auth.getUserInitials();
 					this.backgroundColor = this.getBackgroundColor();
-					this.contrastingColor = this.getContrastingColor(this.backgroundColor);
+					// this.contrastingColor = this.getContrastingColor(this.backgroundColor);
 				} else {
 					this.backgroundColor = 'transparent';
 					this.contrastingColor = 'white';
@@ -129,9 +133,8 @@ export class UserAvatarComponent implements OnInit, OnDestroy {
 	 * Get a text color based on the background color
 	 * @returns {string}
 	 */
-	getContrastingColor(color: string) {
-		const tColor = tinycolor(color);
-		return tColor.isDark() ? 'white' : 'black';
-	}
-
+	// getContrastingColor(color: string) {
+	// 	const tColor = tinycolor(color);
+	// 	return tColor.isDark() ? 'white' : 'black';
+	// }
 }

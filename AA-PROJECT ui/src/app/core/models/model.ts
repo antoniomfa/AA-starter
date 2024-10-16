@@ -7,13 +7,13 @@ import {
 	SerializationOptions,
 	serialMetadataKey
 } from './serializers/serial';
-import {Serializable} from './decorators/serial.decorator';
+import { Serializable } from './decorators/serial.decorator';
 
 export type RecursivePartial<T> = {
 	[P in keyof T]?:
 	T[P] extends (infer U)[] ? RecursivePartial<U>[] :
-		T[P] extends object ? RecursivePartial<T[P]> :
-			T[P];
+	T[P] extends object ? RecursivePartial<T[P]> :
+	T[P];
 };
 
 export interface Identifiable {
@@ -39,7 +39,7 @@ export function createModel<T>(Mapping: ModelConstructor<any>): ModelConstructor
 }
 
 export abstract class Mapping<Raw> {
-	static serialize<MappingConstructor extends new(model?: any) => any,
+	static serialize<MappingConstructor extends new (model?: any) => any,
 		// tslint:disable-next-line:no-shadowed-variable
 		Mapping extends InstanceType<MappingConstructor>,
 		Raw extends RawFromMapping<Mapping>>(this: MappingConstructor, model?: Model<Mapping>, options?: SerializationOptions): Raw {
@@ -52,7 +52,7 @@ export abstract class Mapping<Raw> {
 		return model.toJSON(undefined, options);
 	}
 
-	static deserialize<MappingConstructor extends new(model?: any) => any,
+	static deserialize<MappingConstructor extends new (model?: any) => any,
 		// tslint:disable-next-line:no-shadowed-variable
 		Mapping extends InstanceType<MappingConstructor>,
 		Raw extends RawFromMapping<Mapping>>(this: MappingConstructor, raw?: Raw): Mapping {
@@ -132,10 +132,10 @@ export abstract class Mapping<Raw> {
 	}
 
 	// serialize + stringify + parse + deserialize = deep clone
-	clone(options: SerializationOptions = {internals: true}): this {
+	clone(options: SerializationOptions = { internals: true }): this {
 		const raw = JSON.parse(JSON.stringify(this.toJSON(undefined, options)));
 		// tslint:disable-next-line:no-shadowed-variable
-		const Model = this.constructor as new(model?: any) => this;
+		const Model = this.constructor as new (model?: any) => this;
 		return new Model().applyRaw(raw);
 	}
 }

@@ -1,4 +1,4 @@
-import {Directive, HostListener, EventEmitter, Output} from '@angular/core';
+import { Directive, HostListener, EventEmitter, Output } from '@angular/core';
 
 /**
  * This directive is for supporting dragging and dropping a file onto a drop zone
@@ -14,7 +14,7 @@ import {Directive, HostListener, EventEmitter, Output} from '@angular/core';
 export class FileDnDDirective {
 	@Output() fileDropped: EventEmitter<any> = new EventEmitter<any>();
 
-	constructor() {}
+	constructor() { }
 
 	@HostListener('dragover', ['$event']) onDragOver(evt) {
 		evt.preventDefault();

@@ -1,11 +1,11 @@
-import {Directive, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
-import {FormGroupDirective} from '@angular/forms';
-import {AddFormAction, getFormsState, PatchFormAction} from '@core/root-store/forms';
-import {AppState} from '@core/root-store/models/app-state.model';
-import {Logger} from '@core/services/logger/logger';
-import {Store} from '@ngrx/store';
-import {Subscription} from 'rxjs';
-import {catchError, debounceTime, take} from 'rxjs/operators';
+import { Directive, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { FormGroupDirective } from '@angular/forms';
+import { AddFormAction, getFormsState, PatchFormAction } from '@core/root-store/forms';
+import { AppState } from '@core/root-store/models/app-state.model';
+import { Logger } from '@core/services/logger/logger';
+import { Store } from '@ngrx/store';
+import { Subscription } from 'rxjs';
+import { catchError, debounceTime, take } from 'rxjs/operators';
 
 /**
  * This directive is for taking the value from a form and persisting the form value
@@ -23,7 +23,7 @@ export class ConnectStoreFormDirective implements OnInit, OnDestroy {
 	constructor(
 		private formGroupDirective: FormGroupDirective,
 		private store: Store<AppState>
-	) {}
+	) { }
 
 	ngOnInit(): void {
 		if (this.formStatePath) {
@@ -49,7 +49,7 @@ export class ConnectStoreFormDirective implements OnInit, OnDestroy {
 				)
 				.subscribe((state) => {
 					if (!state[this.formStatePath]) {
-						const payload = {path: this.formStatePath, value: this.formGroupDirective.form.value};
+						const payload = { path: this.formStatePath, value: this.formGroupDirective.form.value };
 						this.store.dispatch(new AddFormAction(payload));
 						this.formAddedToStore.emit(true);
 						Logger.silly('[ConnectStoreFormDirective._setupFormInStore selector] Dispatched AddFormAction with payload', payload);
@@ -63,7 +63,7 @@ export class ConnectStoreFormDirective implements OnInit, OnDestroy {
 			this.formGroupDirective.form.valueChanges
 				.pipe(debounceTime(300))
 				.subscribe((value) => {
-					const payload = {path: this.formStatePath, value};
+					const payload = { path: this.formStatePath, value };
 					this.store.dispatch(new PatchFormAction(payload));
 					this.formValueUpdatedInStore.emit(value);
 					Logger.silly('[ConnectStoreFormDirective._listenToValueChanges] Dispatched PatchFormAction with payload', payload);

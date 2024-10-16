@@ -1,9 +1,9 @@
-import {HttpErrorResponse} from '@angular/common/http';
-import {ErrorHandler, Injectable} from '@angular/core';
-import {Logger} from '@core/services/logger/logger';
-import {NotificationService} from '@core/services/notification/notification.service';
-import {SnackbarConfig, SnackbarMessageTypes} from '@shared/components/snack-bar/snack-bar.interface';
-import {Subject, throwError} from 'rxjs';
+import { HttpErrorResponse } from '@angular/common/http';
+import { ErrorHandler, Injectable } from '@angular/core';
+import { Logger } from '@core/services/logger/logger';
+import { NotificationService } from '@core/services/notification/notification.service';
+import { SnackbarConfig, SnackbarMessageTypes } from '@shared/components/snack-bar/snack-bar.interface';
+import { Subject, throwError } from 'rxjs';
 
 /**
  * This service is for surfacing errors in the UI. By default, we'll notify the user with a snackbar (toast) message.
@@ -56,17 +56,17 @@ export class AppErrorHandler extends ErrorHandler {
 		let message = err?.message || '[AppErrorHandler.handleError] Unknown error';
 		if (err instanceof EvalError) {
 			message = err.message;
-		}else if (err instanceof RangeError) {
+		} else if (err instanceof RangeError) {
 			message = err.message;
-		}else if (err instanceof ReferenceError) {
+		} else if (err instanceof ReferenceError) {
 			message = err.message;
-		}else if (err instanceof SyntaxError) {
+		} else if (err instanceof SyntaxError) {
 			message = err.message;
-		}else if (err instanceof TypeError) {
+		} else if (err instanceof TypeError) {
 			message = err.message;
-		}else if (err instanceof URIError) {
+		} else if (err instanceof URIError) {
 			message = err.message;
-		}else if (err instanceof ErrorEvent) {
+		} else if (err instanceof ErrorEvent) {
 			message = err.error.message;
 		}
 		Logger.error(message, err);

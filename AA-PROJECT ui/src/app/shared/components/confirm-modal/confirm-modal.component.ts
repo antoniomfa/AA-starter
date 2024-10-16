@@ -1,6 +1,6 @@
-import {Component, ComponentFactoryResolver, Injector, OnInit, TemplateRef, Type, ViewChild} from '@angular/core';
-import {FormGroup} from '@angular/forms';
-import {ViewRefDirective} from '@shared/directives/view-ref/view-ref.directive';
+import { Component, ComponentFactoryResolver, Injector, OnInit, TemplateRef, Type, ViewChild } from '@angular/core';
+import { UntypedFormGroup } from '@angular/forms';
+import { ViewRefDirective } from '@shared/directives/view-ref/view-ref.directive';
 
 @Component({
 	selector: 'app-confirm-modal',
@@ -25,15 +25,15 @@ export class ConfirmModalComponent implements OnInit {
 	confirmHandler: any;
 	cancelHandler: any;
 	data: any;
-	formGroup: FormGroup;
+	formGroup: UntypedFormGroup;
 	componentInjector: Injector;
 	closeOnConfirm: boolean = true;
 	closeOnCancel: boolean = true;
 	closeHandler: any;
 
-	@ViewChild(ViewRefDirective, {static: true}) componentViewRef: ViewRefDirective;
+	@ViewChild(ViewRefDirective, { static: true }) componentViewRef: ViewRefDirective;
 
-	constructor(private _componentFactoryResolver: ComponentFactoryResolver) {}
+	constructor(private _componentFactoryResolver: ComponentFactoryResolver) { }
 
 	ngOnInit(): void {
 		if (this.modalComponentContent) {

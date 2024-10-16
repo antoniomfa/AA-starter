@@ -11,8 +11,8 @@ export class TokenService implements OnDestroy {
     private _token?: JwtToken;
     constructor(private store: LocalStorageServ) { }
     private get token(): JwtToken | undefined {
-        if (!this._token) {
-            this._token = new JwtToken(this.store.get(this.key));
+        if (!this._token) {            
+            // this._token = new JwtToken(this.store.get(this.key));
         }
         return this._token;
     }

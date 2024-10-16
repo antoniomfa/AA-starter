@@ -1,8 +1,8 @@
-import {LocalStorageTypes} from '@core/services/local-storage/local-storage.interface';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {UserAction, UserActionTypes} from '@core/root-store/user/user.action';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
-import {ActionReducer} from '@ngrx/store';
+import { LocalStorageTypes } from '@core/services/local-storage/local-storage.interface';
+import { iUserState } from '@core/root-store/models/app-state.model';
+import { UserAction, UserActionTypes } from '@core/root-store/user/user.action';
+import { LocalStorageService } from '@core/services/local-storage/local-storage.service';
+import { ActionReducer } from '@ngrx/store';
 
 export const initialUserState: iUserState = {
 	data: null,
@@ -13,21 +13,21 @@ export const initialUserState: iUserState = {
 export function UserReducer(state: iUserState = initialUserState, action: UserAction) {
 	switch (action.type) {
 		case UserActionTypes.LOGIN_USER_SUCCESS:
-			return {...state, data: action.payload, loading: false, error: undefined};
+			return { ...state, data: action.payload, loading: false, error: undefined };
 		case UserActionTypes.LOGIN_USER_FAILURE:
-			return {...state, data: null, loading: false, error: action.payload};
+			return { ...state, data: null, loading: false, error: action.payload };
 		case UserActionTypes.LOGOUT_USER_SUCCESS:
-			return {...state, data: null, loading: false, error: undefined};
+			return { ...state, data: null, loading: false, error: undefined };
 		case UserActionTypes.LOGOUT_USER_FAILURE:
-			return {...state, data: null, loading: false, error: action.payload};
+			return { ...state, data: null, loading: false, error: action.payload };
 		case UserActionTypes.REGISTER_USER_SUCCESS:
-			return {...state, data: action.payload, loading: false, error: undefined};
+			return { ...state, data: action.payload, loading: false, error: undefined };
 		case UserActionTypes.REGISTER_USER_FAILURE:
-			return {...state, data: null, loading: false, error: action.payload};
+			return { ...state, data: null, loading: false, error: action.payload };
 		case UserActionTypes.CHANGE_PASSWORD_SUCCESS:
-			return {...state, data: action.payload, loading: false, error: undefined};
+			return { ...state, data: action.payload, loading: false, error: undefined };
 		case UserActionTypes.CHANGE_PASSWORD_FAILURE:
-			return {...state, error: action.payload};
+			return { ...state, error: action.payload };
 	}
 	return state;
 }
@@ -50,12 +50,12 @@ export const getUserAvatar = (state: iUserState) => state.data.avatar;
  */
 export function UserFromStorageMetaReducer(reducer: ActionReducer<any>) {
 	return (state, action) => {
-		let newState = state ? {...state} : state;
+		let newState = state ? { ...state } : state;
 		if (state && state.user) {
 			const user = LocalStorageService.getItem(LocalStorageTypes.SESSION, 'user');
 			if (user) {
-				const userState: iUserState = {data: user, loading: false, error: undefined};
-				newState = {...newState, user: userState};
+				const userState: iUserState = { data: user, loading: false, error: undefined };
+				newState = { ...newState, user: userState };
 			}
 		}
 		return reducer(newState, action);

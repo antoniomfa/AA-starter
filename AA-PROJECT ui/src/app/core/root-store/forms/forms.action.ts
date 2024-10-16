@@ -1,4 +1,4 @@
-import {Action} from '@ngrx/store';
+import { Action } from '@ngrx/store';
 
 export enum FormActionTypes {
 	ADD_FORM = '[FORMS] Add Form',
@@ -7,12 +7,12 @@ export enum FormActionTypes {
 
 export class AddFormAction implements Action {
 	readonly type = FormActionTypes.ADD_FORM;
-	constructor(public payload: {path: string, value: any}) {}
+	constructor(public payload: { path: string, value: any }) { }
 }
 
 export class PatchFormAction implements Action {
 	readonly type = FormActionTypes.PATCH_FORM;
-	constructor(public payload: {path: string, value: any}) {}
+	constructor(public payload: { path: string, value: any }) { }
 }
 
 export type FormsAction = PatchFormAction

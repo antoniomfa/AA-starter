@@ -2,13 +2,13 @@
 @import 'src/scss/mixins';
 
 .loading-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 5;
 
 	$offset: 187;
 	$duration: 1.4s;
@@ -18,8 +18,13 @@
 	}
 
 	@keyframes rotator {
-		0% { transform: rotate(0deg); }
-		100% { transform: rotate(270deg); }
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(270deg);
+		}
 	}
 
 	.path {
@@ -32,32 +37,50 @@
 	}
 
 	@keyframes colors {
-		0% { stroke: #4285F4; }
-		25% { stroke: #DE3E35; }
-		50% { stroke: #F7C223; }
-		75% { stroke: #1B9A59; }
-		100% { stroke: #4285F4; }
+		0% {
+			stroke: #4285F4;
+		}
+
+		25% {
+			stroke: #DE3E35;
+		}
+
+		50% {
+			stroke: #F7C223;
+		}
+
+		75% {
+			stroke: #1B9A59;
+		}
+
+		100% {
+			stroke: #4285F4;
+		}
 	}
 
-	@keyframes dash {
-		0% { stroke-dashoffset: $offset; }
-		50% {
-			stroke-dashoffset: $offset/4;
-			transform:rotate(135deg);
-		}
-		100% {
-			stroke-dashoffset: $offset;
-			transform:rotate(450deg);
-		}
-	}
+	// @keyframes dash {
+	// 	0% {
+	// 		stroke-dashoffset: $offset;
+	// 	}
+
+	// 	50% {
+	// 		stroke-dashoffset: $offset/4;
+	// 		transform: rotate(135deg);
+	// 	}
+
+	// 	100% {
+	// 		stroke-dashoffset: $offset;
+	// 		transform: rotate(450deg);
+	// 	}
+	// }
 }
 
 .site-container {
-  @include font-size(12px);
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  height: 100vh;
-  background: #f1f1f1;
-  overflow: hidden;
+	@include font-size(12px);
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	height: 100vh;
+	background: #f1f1f1;
+	overflow: hidden;
 
 	.site-sidebar {
 		width: 64px;

@@ -29,7 +29,7 @@ export class DomInjectorService {
 		private _componentFactoryResolver: ComponentFactoryResolver,
 		private _appRef: ApplicationRef,
 		private _injector: Injector
-	) {}
+	) { }
 
 	/**
 	 * Create a ComponentRef<unknown> from passed in component

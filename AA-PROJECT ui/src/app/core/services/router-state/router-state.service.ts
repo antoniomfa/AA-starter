@@ -1,10 +1,10 @@
-import {Injectable} from '@angular/core';
-import {Router} from '@angular/router';
-import {RouterStateUrl} from '@core/root-store/models/app-state.model';
-import {RouterReducerState} from '@ngrx/router-store';
-import {Store} from '@ngrx/store';
+import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+import { RouterStateUrl } from '@core/root-store/models/app-state.model';
+import { RouterReducerState } from '@ngrx/router-store';
+import { Store } from '@ngrx/store';
 import * as fromRoot from '@core/root-store';
-import {pairwise} from 'rxjs/operators';
+import { pairwise } from 'rxjs/operators';
 
 export interface iFromToRouterHistory {
 	from: RouterReducerState<RouterStateUrl>;
@@ -27,7 +27,7 @@ export class RouterStateService {
 
 	constructor(
 		private _router: Router,
-		private store: Store<{router}>
+		private store: Store<{ router }>
 	) {
 		this._listenToStore();
 	}
@@ -42,7 +42,7 @@ export class RouterStateService {
 				pairwise()
 			)
 			.subscribe(([oldRoute, newRoute]) => {
-				this._fromToHistory = [...this._fromToHistory, {from: oldRoute, to: newRoute}];
+				this._fromToHistory = [...this._fromToHistory, { from: oldRoute, to: newRoute }];
 				this._navigationHistory = [...this._navigationHistory, newRoute];
 				if (!Object.keys(newRoute.state.queryParams).length) {
 					this._pageHistory = [...this._pageHistory, newRoute];
@@ -109,7 +109,7 @@ export class RouterStateService {
 	 * navigated to
 	 */
 	get fromToUrlHistory() {
-		return this._fromToHistory.map(historyState => ({from: historyState.from?.state.url, to: historyState.to?.state.url}));
+		return this._fromToHistory.map(historyState => ({ from: historyState.from?.state.url, to: historyState.to?.state.url }));
 	}
 
 	/**

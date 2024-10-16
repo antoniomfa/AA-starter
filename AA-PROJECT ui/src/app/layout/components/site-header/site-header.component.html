@@ -1,13 +1,66 @@
-<div class="site-header-container flex-row">
+<!-- <div class="site-header-container flex-row">
 	<a routerLink="/" class="title">{{title}}</a>
-	<span class="spacer"></span>
-	<a routerLink="/features" class="header-link" [class.active]="active === 'features'">
-		Features [Private Info]
-	</a>	
-	<a routerLink="/about" class="header-link" [class.active]="active === 'about'">
-		About [Private Info]
-	</a>
-	<a class="userIcon" [routerLink]="user ? '/auth/user' : '/auth/login'">		
-		<app-user-avatar class="small"></app-user-avatar>
-	</a>
-</div>
+	<div *ngIf="!showToggleButton">
+		<span class="spacer"></span>
+		<a routerLink="/features" class="header-link link1" [class.active]="active === 'features'">
+			Features [Private Info]
+		</a>
+		<a routerLink="/about" class="header-link link2" [class.active]="active === 'about'">
+			About [Private Info]
+		</a>
+		<i *ngIf="!user" class="material-icons user-ident">perm_identity</i>
+		<a class="userIcon" [routerLink]="user ? '/auth/user' : '/auth/login'">
+			<app-user-avatar class="small"></app-user-avatar>
+		</a>
+	</div>
+	<button *ngIf="showToggleButton" (click)="toggleOptions()" class="toggle-button">
+		{{ isOptionsVisible ? 'Hide Options' : 'Show Options' }}
+	</button>
+	<div *ngIf="isOptionsVisible" class="options-list">
+		<ul>
+			<li><a routerLink="/features" class="header-link link1" [class.active]="active === 'features'">
+					Features [Private Info]
+				</a></li>
+			<li><a routerLink="/about" class="header-link link2" [class.active]="active === 'about'">
+					About [Private Info]
+				</a></li>
+			<li> <i *ngIf="!user" class="material-icons user-ident">perm_identity</i>
+				<a class="userIcon" [routerLink]="user ? '/auth/user' : '/auth/login'">
+					<app-user-avatar class="small"></app-user-avatar>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div> -->
+
+<nav class="navbar">
+	<div class="navbar-container">
+	  <!-- Page Title -->
+	  <div class="navbar-title">
+		<h1><a routerLink="/" class="title">{{title}}</a></h1>
+	  </div>
+  
+	  <!-- Login Button -->
+	  <div class="navbar-login">
+		<a class="userIcon login-btn" [routerLink]="user ? '/auth/user' : '/auth/login'">
+			<app-user-avatar class="small"></app-user-avatar>
+		</a>
+	  </div>
+  
+	  <!-- Toggle button for mobile screens -->
+	  <button class="navbar-toggle" (click)="toggleMenu()" *ngIf="isMobile">
+		☰
+	  </button>
+  
+	  <!-- Responsive Menu -->
+	  <ul [class.open]="menuOpen" class="navbar-menu">
+		<li><a routerLink="/features" class="header-link link1" [class.active]="active === 'features'">
+			Features [Private Info]
+		</a></li>
+		<li><a routerLink="/about" class="header-link link2" [class.active]="active === 'about'">
+			About [Private Info]
+		</a></li>
+	  </ul>
+	</div>
+  </nav>
+  
